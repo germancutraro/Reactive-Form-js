@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reactive Form - Vanilla Js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    input,
+    textarea {
+      display: block
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <legend>Send us your comments</legend>
+    <input type="text" name="name" title="your name" placeholder="Your name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+      autofocus required>
+    <input type="email" name="email" title="your Email" placeholder="Your Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+      required>
+    <input type="text" name="affair" title="Affair" placeholder="Affair" required>
+    <textarea name="comentarios" title="your comments" placeholder="Write your comments..." cols="50" rows="5" required></textarea>
+    <div class="preload  hidden">
+      <i class="fa  fa-refresh  fa-spin  fa-5x"></i>
+    </div>
+    <div class="message  hidden"></div>
+    <input type="submit" value="SEND">
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
