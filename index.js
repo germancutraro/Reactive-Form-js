@@ -4,7 +4,7 @@
   c(inputs)
   form.addEventListener('submit', e => {
     e.preventDefault()
-    alert('Se ha enviado el formulario')
+    alert('Form sent!')
   })
   inputs.forEach(input => {
     let span = d.createElement('span')
